@@ -22,9 +22,9 @@ public class MouseDownImage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPlacingCube)
+        if (isPlacingCube == true && isPlacingGrass == false)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.B))
             {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
@@ -37,9 +37,9 @@ public class MouseDownImage : MonoBehaviour
                 } 
             }
         } 
-        else if (isPlacingGrass)
+        else if (isPlacingGrass == true && isPlacingCube == false)
         {
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetKeyDown(KeyCode.G))
             {
                 Ray rayy = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hitt;
