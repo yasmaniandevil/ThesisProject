@@ -13,8 +13,6 @@ public class MouseDownImage : MonoBehaviour
     public GameObject grassPrefab;
     private bool isPlacingCube = false;
     private bool isPlacingGrass = false;
-
-    //public GameObject buildingBlock;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,50 +22,52 @@ public class MouseDownImage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPlacingCube || isPlacingGrass)
+        if (isPlacingCube)
         {
-            
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("clicked");
-                if (isPlacingCube)
-                {
-                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                    RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
 
-                    if (Physics.Raycast(ray, out hit))
-                    {
-                        if (isPlacingCube)
-                        {
-                            Instantiate(buildingPrefab, hit.point, quaternion.identity);
-                            
-                        }
-                        else if (isPlacingGrass)
-                        {
-                            Instantiate(grassPrefab, hit.point, quaternion.identity);
-                        }
-                    
-                        
-                    }
+                if (Physics.Raycast(ray, out hit))
+                {
+                    Debug.Log(isPlacingCube);
+                    Instantiate(buildingPrefab, hit.point, quaternion.identity);
+                    //Debug.Log("Instantiate Cube");
+                } 
+            }
+        } 
+        else if (isPlacingGrass)
+        {
+            if (Input.GetMouseButtonDown(1))
+            {
+                Ray rayy = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hitt;
+
+                if (Physics.Raycast(rayy, out hitt))
+                {
+                    Debug.Log(isPlacingGrass);
+                    Instantiate(grassPrefab, hitt.point, quaternion.identity);
                 }
             }
         }
     }
+    
 
     public void ToggleCubePlacement()
     {
         
-        isPlacingCube = !isPlacingCube;
+        isPlacingCube = true;
         isPlacingGrass = false;
         Debug.Log("Toggled Cube Placement: " + isPlacingCube);
-        Debug.Log("ToggleCubeGrass: " + isPlacingGrass);
+        Debug.Log("Turn off grass: " + isPlacingGrass);
     }
 
     public void ToggleGrassPlacement()
     {
-        isPlacingGrass = !isPlacingGrass;
         isPlacingCube = false;
+        isPlacingGrass = true;
         Debug.Log("Toggled Grass Placement: " + isPlacingGrass);
-        Debug.Log("ToggleGrassCube: " + isPlacingCube);
+        Debug.Log("Turn off cube: " + isPlacingCube);
     }
 }
