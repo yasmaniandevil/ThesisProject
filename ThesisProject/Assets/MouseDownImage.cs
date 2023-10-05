@@ -10,7 +10,9 @@ public class MouseDownImage : MonoBehaviour
 {
 
     public GameObject buildingPrefab;
+    public GameObject grassPrefab;
     private bool isPlacingCube = false;
+    private bool isPlacingGrass = false;
 
     //public GameObject buildingBlock;
     // Start is called before the first frame update
@@ -22,17 +24,31 @@ public class MouseDownImage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (isPlacingCube || isPlacingGrass)
         {
-            if (isPlacingCube)
+            
+            if (Input.GetMouseButtonDown(0))
             {
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                RaycastHit hit;
-
-                if (Physics.Raycast(ray, out hit))
+                Debug.Log("clicked");
+                if (isPlacingCube)
                 {
+                    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                    RaycastHit hit;
+
+                    if (Physics.Raycast(ray, out hit))
+                    {
+                        if (isPlacingCube)
+                        {
+                            Instantiate(buildingPrefab, hit.point, quaternion.identity);
+                            
+                        }
+                        else if (isPlacingGrass)
+                        {
+                            Instantiate(grassPrefab, hit.point, quaternion.identity);
+                        }
                     
-                    Instantiate(buildingPrefab, hit.point, quaternion.identity);
+                        
+                    }
                 }
             }
         }
@@ -42,5 +58,16 @@ public class MouseDownImage : MonoBehaviour
     {
         
         isPlacingCube = !isPlacingCube;
+        isPlacingGrass = false;
+        Debug.Log("Toggled Cube Placement: " + isPlacingCube);
+        Debug.Log("ToggleCubeGrass: " + isPlacingGrass);
+    }
+
+    public void ToggleGrassPlacement()
+    {
+        isPlacingGrass = !isPlacingGrass;
+        isPlacingCube = false;
+        Debug.Log("Toggled Grass Placement: " + isPlacingGrass);
+        Debug.Log("ToggleGrassCube: " + isPlacingCube);
     }
 }
