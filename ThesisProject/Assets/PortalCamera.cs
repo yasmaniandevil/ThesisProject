@@ -25,10 +25,15 @@ public class PortalCamera : MonoBehaviour
         //Debug.Log("Player Offset: " + playerOffsetFromPortal);  
         Debug.Log("Portal B Position: " + portalB.position);
         Debug.Log("Player Cam Pos: " + playerCamera.position);
+        
+        //Vector3 transformedPlayerOffset = portalA.TransformPoint(portalA.InverseTransformPoint(playerOffsetFromPortal));
+        
         //set the camera's position to the portal's position plus the player's offset
+        //transform.position = portalA.position + transformedPlayerOffset;
         transform.position = portalA.position + playerOffsetFromPortal;
-        
-        
+        Debug.Log("CurrentPos: " + transform.position);
+
+
         //transform.position = portalA.position - vecky;
         //Debug.Log(transform.position);
 
