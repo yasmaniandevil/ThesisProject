@@ -7,10 +7,9 @@ public class PortalCamera : MonoBehaviour
 {
 
     public Transform playerCamera;
-    public Transform portalB;
-    public Transform portalA;
-    //public Vector3 vecky;
-    
+    [FormerlySerializedAs("portalB")] public Transform Portal;
+    [FormerlySerializedAs("portalA")] public Transform otherPortal;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,25 +17,23 @@ public class PortalCamera : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnPreCull()
     {
         //calculate offset between playerCamera and PortalB
-        Vector3 playerOffsetFromPortal = playerCamera.position - portalA.position;
-        //Debug.Log("Player Offset: " + playerOffsetFromPortal);  
-        Debug.Log("Portal B Position: " + portalA.position);
-        Debug.Log("Player Cam Pos: " + playerCamera.position);
-        
-        //Vector3 transformedPlayerOffset = portalA.TransformPoint(portalA.InverseTransformPoint(playerOffsetFromPortal));
+        Vector3 playerOffsetFromPortal = playerCamera.position - otherPortal.position;
         
         //set the camera's position to the portal's position plus the player's offset
-        //transform.position = portalA.position + transformedPlayerOffset;
-        transform.position = portalB.position + playerOffsetFromPortal;
-        Debug.Log("CurrentPos: " + transform.position);
+        transform.position = Portal.position + playerOffsetFromPortal;
+        
+        // Calculate the angular difference in rotation between the two portals
+        float angularDifferenceBetweenPortalRotations = Quaternion.Angle(otherPortal.rotation, Portal.rotation);
 
-        float angularDifferenceBetweenPortalRotations = Quaternion.Angle(portalA.rotation, portalB.rotation);
-
+        // Create a rotation that represents the difference in rotation between the two portals.
         Quaternion portalRotationDifference = Quaternion.AngleAxis(angularDifferenceBetweenPortalRotations, Vector3.up);
+        // Calculate the new camera direction by applying the portal's rotation difference
+        // //to the playerCamera's forward direction
         Vector3 newCameraDirection = portalRotationDifference * playerCamera.forward;
+        // Set the camera's rotation to look in the new camera direction.
         transform.rotation = Quaternion.LookRotation(newCameraDirection, Vector3.up);
 
     }
