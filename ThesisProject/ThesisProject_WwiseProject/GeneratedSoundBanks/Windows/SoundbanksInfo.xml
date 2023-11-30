@@ -9,10 +9,33 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{986487A9-2683-E47A-8688-3D0FE6FDB954}">
+		<SoundBank Id="1119349543" Type="User" Language="SFX" Hash="{9C897E62-F142-AB01-8FF3-10C0D857EAEE}">
+			<ShortName>PortalExit</ShortName>
+			<Path>PortalExit.bnk</Path>
+			<Media>
+				<File Id="57179054" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Portal Exit.wav</ShortName>
+					<CachePath>SFX/Portal Exit_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1119349543" Name="PortalExit" MaxAttenuation="30" DurationType="OneShot" DurationMin="83.13" DurationMax="83.13">
+					<MediaRefs>
+						<MediaRef Id="57179054"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8CC9B565-58A6-A2C3-D007-AAECC7A786BF}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -21,8 +44,17 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="348963605" Name="Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{CE5B70F3-B173-C867-4542-07136FAAFA64}">
+		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{1219A9BE-078D-0AE0-5218-EFFFECC41410}">
 			<ShortName>PortalOpen</ShortName>
 			<Path>PortalOpen.bnk</Path>
 			<Media>
@@ -36,9 +68,12 @@
 					<MediaRefs>
 						<MediaRef Id="460168151"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{173EB4D0-5D4A-6302-51F1-82F40C59B3E3}</FileHash>
+	<FileHash>{BB4C455C-CAB2-7066-99E9-D8744AF8BEBC}</FileHash>
 </SoundBanksInfo>

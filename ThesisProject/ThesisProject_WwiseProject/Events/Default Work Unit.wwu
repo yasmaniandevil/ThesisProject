@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="PortalExit" ID="{F4BBC475-6E09-4FFF-A0AC-CD450E883ED5}">
+					<ChildrenList>
+						<Action Name="" ID="{C3FDCDC9-E1AA-4E5A-8828-3C4BBD1A989F}" ShortID="595802854">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Portal Exit" ID="{215EB2C1-1A9C-4FDE-9702-8D49210C073C}" WorkUnitID="{5532C76D-BD58-415D-A7DB-835CC67A0E73}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

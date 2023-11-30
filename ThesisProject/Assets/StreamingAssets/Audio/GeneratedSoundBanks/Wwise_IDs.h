@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PORTALENTER = 193618431U;
+        static const AkUniqueID PORTALEXIT = 1119349543U;
     } // namespace EVENTS
 
     namespace TRIGGERS
@@ -24,6 +25,7 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID PORTALEXIT = 1119349543U;
         static const AkUniqueID PORTALOPEN = 2461641043U;
     } // namespace BANKS
 
@@ -31,6 +33,11 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID REVERB = 348963605U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

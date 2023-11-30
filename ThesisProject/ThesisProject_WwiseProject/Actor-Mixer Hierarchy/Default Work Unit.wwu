@@ -20,7 +20,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F9AE73-9FDA-49D3-8EC0-C4657CD3EE28}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+							<ObjectRef Name="Ambient" ID="{46B1CAE6-54C4-45D5-B63C-0E0B74301C35}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Reverb" ID="{E2C6E551-D926-464F-8EB0-EDA5B5BAB02A}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
@@ -37,6 +37,37 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3)" ID="{1E553483-FD83-4EF3-A940-83CB74C0E77F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Portal Exit" ID="{215EB2C1-1A9C-4FDE-9702-8D49210C073C}" ShortID="16120184">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="PortalExit" ID="{C2657948-BDB5-4362-B993-F9A21A5D1F5F}" WorkUnitID="{FA9FFE0E-C28E-4B8C-95D6-8DFC23573EBD}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F9AE73-9FDA-49D3-8EC0-C4657CD3EE28}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Ambient" ID="{46B1CAE6-54C4-45D5-B63C-0E0B74301C35}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{E2C6E551-D926-464F-8EB0-EDA5B5BAB02A}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Portal Exit" ID="{FF3227E8-ED0F-4BA1-B4B9-A23AD37D3436}">
+							<Language>SFX</Language>
+							<AudioFile>Portal Exit.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="57179054"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Portal Exit" ID="{FF3227E8-ED0F-4BA1-B4B9-A23AD37D3436}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

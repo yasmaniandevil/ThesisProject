@@ -9,10 +9,33 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F56A610C-C7C4-F874-B68B-7ADDF94EBB7A}">
+		<SoundBank Id="1119349543" Type="User" Language="SFX" Hash="{9C897E62-F142-AB01-8FF3-10C0D857EAEE}">
+			<ShortName>PortalExit</ShortName>
+			<Path>PortalExit.bnk</Path>
+			<Media>
+				<File Id="57179054" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Portal Exit.wav</ShortName>
+					<CachePath>SFX/Portal Exit_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="1119349543" Name="PortalExit" MaxAttenuation="30" DurationType="OneShot" DurationMin="83.13" DurationMax="83.13">
+					<MediaRefs>
+						<MediaRef Id="57179054"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B0EB0E45-AFA6-76C1-3BAE-DE88C975C00E}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -21,8 +44,17 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="348963605" Name="Reverb">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="602546716"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{601BB8BE-347C-A1DD-8F4D-228F3C9402E7}">
+		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{1219A9BE-078D-0AE0-5218-EFFFECC41410}">
 			<ShortName>PortalOpen</ShortName>
 			<Path>PortalOpen.bnk</Path>
 			<Media>
@@ -32,13 +64,16 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2461641043" Name="PortalOpen" MaxAttenuation="100" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
+				<Event Id="193618431" Name="PortalEnter" MaxAttenuation="10" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
 					<MediaRefs>
 						<MediaRef Id="460168151"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{63C81BB0-261E-E7D3-B136-0BF404A88C3E}</FileHash>
+	<FileHash>{754DF00C-01AE-7879-E68C-3E58E4803CAA}</FileHash>
 </SoundBanksInfo>
