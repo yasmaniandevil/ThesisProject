@@ -73,34 +73,12 @@ public class AkGameObj : UnityEngine.MonoBehaviour
 	public AKRESULT Register()
 	{
 		if (isRegistered)
-		{
 			return AKRESULT.AK_Success;
-		}
 
 		isRegistered = true;
 		return AkSoundEngine.RegisterGameObj(gameObject, gameObject.name);
 	}
 
-	private void UnregisterGameObject()
-	{
-		if (AkSoundEngine.IsInitialized())
-        {
-			Unregister();
-		}
-    }
-
-	public AKRESULT Unregister()
-	{
-		if (!isRegistered)
-		{
-			return AKRESULT.AK_Success;
-		}
-
-		isRegistered = false;
-		m_posData = null;
-		return AkSoundEngine.UnregisterGameObj(gameObject);
-	}
-	
 	private void SetPosition()
 	{
 		var position = GetPosition();
@@ -110,9 +88,7 @@ public class AkGameObj : UnityEngine.MonoBehaviour
 		if (m_posData != null)
 		{
 			if (m_posData.position == position && m_posData.forward == forward && m_posData.up == up)
-			{
 				return;
-			}
 
 			m_posData.position = position;
 			m_posData.forward = forward;
@@ -125,13 +101,11 @@ public class AkGameObj : UnityEngine.MonoBehaviour
 	private void Awake()
 	{
 #if UNITY_EDITOR
-		if (AkUtilities.IsMigrating)
+		if (!AkSoundEngine.EditorIsSoundEngineLoaded || AkUtilities.IsMigrating)
 			return;
 
 		if (!UnityEditor.EditorApplication.isPlaying)
 			UnityEditor.EditorApplication.update += CheckStaticStatus;
-		AkSoundEngineInitialization.Instance.initializationDelegate += RegisterGameObject;
-		AkSoundEngineInitialization.Instance.terminationDelegate += UnregisterGameObject;
 #endif
 
 		// If the object was marked as static, don't update its position to save cycles.
@@ -140,14 +114,6 @@ public class AkGameObj : UnityEngine.MonoBehaviour
 
 		// Cache the bounds to avoid calls to GetComponent()
 		m_Collider = GetComponent<UnityEngine.Collider>();
-	}
-
-    private void RegisterGameObject()
-    {
-		if (!AkSoundEngine.IsInitialized())
-        {
-			return;
-        }
 
 		//Register a Game Object in the sound engine, with its name.
 		if (Register() == AKRESULT.AK_Success)
@@ -195,30 +161,27 @@ public class AkGameObj : UnityEngine.MonoBehaviour
 		if (AkUtilities.IsMigrating)
 			return;
 #endif
-		RegisterGameObject();
+
+		//if enabled is set to false, then the update function wont be called
+		enabled = !isStaticObject;
 	}
 
 #if UNITY_EDITOR
 	private void OnDisable()
 	{
-		if (!AkSoundEngineInitialization.Instance.ShouldKeepSoundEngineEnabled())
-		{
-			Unregister();
-		}
+		if (!UnityEditor.EditorApplication.isPlaying &&AkSoundEngine.IsInitialized())
+			AkSoundEngine.UnregisterGameObj(gameObject);
 	}
 #endif
 
 	private void OnDestroy()
 	{
 #if UNITY_EDITOR
-		if (AkUtilities.IsMigrating)
+		if (!AkSoundEngine.EditorIsSoundEngineLoaded || AkUtilities.IsMigrating)
 			return;
 
 		if (!UnityEditor.EditorApplication.isPlaying)
 			UnityEditor.EditorApplication.update -= CheckStaticStatus;
-
-		AkSoundEngineInitialization.Instance.initializationDelegate -= RegisterGameObject;
-		AkSoundEngineInitialization.Instance.terminationDelegate -= UnregisterGameObject;
 #endif
 
 		// We can't do the code in OnDestroy if the gameObj is unregistered, so do it now.
@@ -229,28 +192,28 @@ public class AkGameObj : UnityEngine.MonoBehaviour
 				handler.DoDestroy();
 		}
 
-		if (AkSoundEngine.IsInitialized())
-			Unregister();
+#if UNITY_EDITOR
+		if (!UnityEditor.EditorApplication.isPlaying)
+			return;
+#endif
 
+		if (AkSoundEngine.IsInitialized())
+			AkSoundEngine.UnregisterGameObj(gameObject);
 	}
 
 	private void Update()
 	{
 #if UNITY_EDITOR
-		if (AkUtilities.IsMigrating ||
+		if (!AkSoundEngine.EditorIsSoundEngineLoaded || AkUtilities.IsMigrating ||
 		    !UnityEditor.EditorApplication.isPlaying)
 			return;
 #endif
 
-		if (!isStaticObject)
-		{
-			if (m_envData != null)
-			{
-				m_envData.UpdateAuxSend(gameObject, transform.position);
-			}
+		if (m_envData != null)
+			m_envData.UpdateAuxSend(gameObject, transform.position);
 
-			SetPosition();			
-		}
+		if (!isStaticObject)
+			SetPosition();
 	}
 
 	/// Gets the position including the position offset, if applyPositionOffset is enabled. User can also override this method to calculate an arbitrary position.

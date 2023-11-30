@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{7FBA6390-4CF1-44FA-9DA5-FC65F66E8FC0}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{7FBA6390-4CF1-44FA-9DA5-FC65F66E8FC0}" SchemaVersion="110">
 	<Queries>
 		<WorkUnit Name="Factory Queries" ID="{7FBA6390-4CF1-44FA-9DA5-FC65F66E8FC0}" PersistMode="Standalone">
 			<ChildrenList>
@@ -784,10 +784,10 @@
 										<Property Name="WAQL" Type="string" Value="$ where parent.busvolume &lt; 0"/>
 									</PropertyList>
 								</Query>
-								<Query Name="where first effect plugin name equals" ID="{E9A78C6A-0BEC-43ED-B54B-CCE9D0177187}">
+								<Query Name="where effect0 plugin name equals" ID="{E9A78C6A-0BEC-43ED-B54B-CCE9D0177187}">
 									<PropertyList>
 										<Property Name="ObjectType" Type="int32" Value="10"/>
-										<Property Name="WAQL" Type="string" Value="$ where effects.first().effect.pluginname = &quot;Wwise Compressor&quot;"/>
+										<Property Name="WAQL" Type="string" Value="$ where effect0.pluginname = &quot;Wwise Compressor&quot;"/>
 									</PropertyList>
 								</Query>
 								<Query Name="where work unit is root but not default" ID="{486AA232-846E-474F-8039-5261BC719E13}">
@@ -889,7 +889,7 @@
 								<Query Name="from type effect where owner name contains (wildcard)" ID="{75D2C782-7FDE-4A76-997E-BFB0A541FB35}">
 									<PropertyList>
 										<Property Name="ObjectType" Type="int32" Value="10"/>
-										<Property Name="WAQL" Type="string" Value="$ from type Effect where owner.owner.name :&quot;*env&quot;"/>
+										<Property Name="WAQL" Type="string" Value="$ from type Effect where owner.name :&quot;*env&quot;"/>
 									</PropertyList>
 								</Query>
 								<Query Name="where children count greater than" ID="{7C7D09EE-470B-4364-A3BB-24FF7BDDA81D}">
@@ -922,22 +922,16 @@
 										<Property Name="WAQL" Type="string" Value="$ from type Sound where UserAuxSend0=&quot;AuxBus:Hangar_Env&quot;"/>
 									</PropertyList>
 								</Query>
-								<Query Name="from type sound where first effect is eq" ID="{0BD5B0D2-5442-4599-8920-EF7A00E59582}">
+								<Query Name="from type sound where effect0 is eq" ID="{0BD5B0D2-5442-4599-8920-EF7A00E59582}">
 									<PropertyList>
 										<Property Name="ObjectType" Type="int32" Value="10"/>
-										<Property Name="WAQL" Type="string" Value="$ from type Sound where effects.first().effect.pluginname : &quot;eq&quot;"/>
+										<Property Name="WAQL" Type="string" Value="$ from type Sound where Effect0.pluginname : &quot;eq&quot;"/>
 									</PropertyList>
 								</Query>
-								<Query Name="from type sound where any effect is eq" ID="{297DC9C0-0FEC-4D83-9214-CFCB064531D6}">
+								<Query Name="from type sound where effect0, effect1, effect2 effect3 is eq" ID="{297DC9C0-0FEC-4D83-9214-CFCB064531D6}">
 									<PropertyList>
 										<Property Name="ObjectType" Type="int32" Value="10"/>
-										<Property Name="WAQL" Type="string" Value="$ from type Sound where effects.any(effect.pluginname : &quot;eq&quot;)"/>
-									</PropertyList>
-								</Query>
-								<Query Name="where any effect is rendered" ID="{F7641030-3086-4B9D-907E-82A1705C6BC9}">
-									<PropertyList>
-										<Property Name="ObjectType" Type="int32" Value="10"/>
-										<Property Name="WAQL" Type="string" Value="$ where effects.any(render = true)"/>
+										<Property Name="WAQL" Type="string" Value="$ from type Sound where Effect0.pluginname : &quot;eq&quot; or Effect1.pluginname : &quot;eq&quot; or Effect2.pluginname : &quot;eq&quot; or Effect3.pluginname : &quot;eq&quot;"/>
 									</PropertyList>
 								</Query>
 							</ChildrenList>
@@ -1361,7 +1355,7 @@
 								<Query Name="from type effect select references to" ID="{A0A7098D-0C49-404B-89F5-7BCFF6259988}">
 									<PropertyList>
 										<Property Name="ObjectType" Type="int32" Value="10"/>
-										<Property Name="WAQL" Type="string" Value="$ from type Effect select referencesTo.owner"/>
+										<Property Name="WAQL" Type="string" Value="$ from type Effect select referencesTo"/>
 									</PropertyList>
 								</Query>
 								<Query Name="from name name select references to" ID="{58DDADFD-3016-4374-8272-F154E4F8E6E2}">
@@ -1406,22 +1400,22 @@
 										<Property Name="WAQL" Type="string" Value="$ from type sound select outputbus distinct"/>
 									</PropertyList>
 								</Query>
-								<Query Name="from type sound select first effect" ID="{987ED4D9-4AAF-494D-9C1D-AD663CF41A17}">
+								<Query Name="from type sound select effect0" ID="{987ED4D9-4AAF-494D-9C1D-AD663CF41A17}">
 									<PropertyList>
 										<Property Name="ObjectType" Type="int32" Value="10"/>
-										<Property Name="WAQL" Type="string" Value="$ from type sound select effects.at(0).effect"/>
+										<Property Name="WAQL" Type="string" Value="$ from type sound select effect0"/>
 									</PropertyList>
 								</Query>
-								<Query Name="from type sound select all effects" ID="{BD5A0DE9-2DFD-407A-BEE5-2789838C8525}">
+								<Query Name="from type sound select effect0, effect1, effect2, effect3" ID="{BD5A0DE9-2DFD-407A-BEE5-2789838C8525}">
 									<PropertyList>
 										<Property Name="ObjectType" Type="int32" Value="10"/>
-										<Property Name="WAQL" Type="string" Value="$ from type sound select effects.effect"/>
+										<Property Name="WAQL" Type="string" Value="$ from type sound select effect0, effect1, effect2, effect3"/>
 									</PropertyList>
 								</Query>
 								<Query Name="from type effect select owner" ID="{7125B9EE-8492-475F-AC92-2A407B368DA8}">
 									<PropertyList>
 										<Property Name="ObjectType" Type="int32" Value="10"/>
-										<Property Name="WAQL" Type="string" Value="$ from type Effect select owner.owner"/>
+										<Property Name="WAQL" Type="string" Value="$ from type Effect select owner"/>
 									</PropertyList>
 								</Query>
 								<Query Name="from project select music transition root" ID="{3EC651C5-BF31-4A79-82AE-C56919E7625A}">

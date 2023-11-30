@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{D3102986-5039-4460-A0AE-3F821EA2007D}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{C71F0C57-57F3-45BD-94B9-CB218652F0E8}" SchemaVersion="110">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{D3102986-5039-4460-A0AE-3F821EA2007D}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{C71F0C57-57F3-45BD-94B9-CB218652F0E8}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="PortalEnter" ID="{AAED37D1-1D55-4C65-BAAD-A9F817B16426}">
+				<Event Name="PortalOpen" ID="{FE9293A6-1E27-4D42-A0C3-42856C082A10}">
 					<ChildrenList>
-						<Action Name="" ID="{B751D364-048F-499A-9845-133B81692453}" ShortID="767851662">
+						<Action Name="" ID="{7144557F-FBB2-4326-B4FB-8C277BF7A869}" ShortID="502504793">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Sparkle" ID="{E87B0125-A74A-4586-8AC6-C8279738C5C9}" WorkUnitID="{51BB2E15-BD88-429B-8BF7-54D2032EDAE3}"/>
+									<ObjectRef Name="PortalOpen" ID="{43E6DAA4-46B8-400A-A0E4-D70A0754473B}" WorkUnitID="{5532C76D-BD58-415D-A7DB-835CC67A0E73}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

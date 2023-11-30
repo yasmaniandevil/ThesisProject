@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{C465612A-52CD-428F-B12E-6F14F1C49154}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{E89E6377-53DB-41EF-9409-A55EACD87D4C}" SchemaVersion="110">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{C465612A-52CD-428F-B12E-6F14F1C49154}" PersistMode="Standalone">
+		<WorkUnit Name="Default Work Unit" ID="{E89E6377-53DB-41EF-9409-A55EACD87D4C}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Portal" ID="{DB695DA5-8C15-4413-B040-BAAA3A052506}">
+				<SoundBank Name="PortalOpen" ID="{16168948-C0EF-417D-8999-0F19F8BB4860}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Sparkle" ID="{E87B0125-A74A-4586-8AC6-C8279738C5C9}" WorkUnitID="{51BB2E15-BD88-429B-8BF7-54D2032EDAE3}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="PortalEnter" ID="{AAED37D1-1D55-4C65-BAAD-A9F817B16426}" WorkUnitID="{D3102986-5039-4460-A0AE-3F821EA2007D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PortalOpen" ID="{FE9293A6-1E27-4D42-A0C3-42856C082A10}" WorkUnitID="{C71F0C57-57F3-45BD-94B9-CB218652F0E8}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

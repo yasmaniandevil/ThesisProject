@@ -7,12 +7,11 @@
   <CreateWwiseGlobal>true</CreateWwiseGlobal>
   <CreateWwiseListener>true</CreateWwiseListener>
   <ObjectReferenceAutoCleanup>true</ObjectReferenceAutoCleanup>
-  <LoadSoundEngineInEditMode>false</LoadSoundEngineInEditMode>
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac />
-  <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2023.1.0.8367</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../../ThesisProject/ThesisProject_WwiseProject/ThesisProject_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2022.1.8.8316</WwiseInstallationPathWindows>
+  <WwiseProjectPath>../ThesisProject_WwiseProject/ThesisProject_WwiseProject.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>
