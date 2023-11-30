@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D3102986-5039-4460-A0AE-3F821EA2007D}" SchemaVersion="119">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{D3102986-5039-4460-A0AE-3F821EA2007D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D3102986-5039-4460-A0AE-3F821EA2007D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PortalEnter" ID="{AAED37D1-1D55-4C65-BAAD-A9F817B16426}">
+					<ChildrenList>
+						<Action Name="" ID="{B751D364-048F-499A-9845-133B81692453}" ShortID="767851662">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sparkle" ID="{E87B0125-A74A-4586-8AC6-C8279738C5C9}" WorkUnitID="{51BB2E15-BD88-429B-8BF7-54D2032EDAE3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

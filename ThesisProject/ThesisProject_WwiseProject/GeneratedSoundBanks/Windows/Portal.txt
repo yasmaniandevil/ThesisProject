@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	193618431	PortalEnter			\Default Work Unit\PortalEnter	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	936812434	Sparkle	C:\Users\batni\Documents\NYU\Fall 2023\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\Sparkle_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Sparkle		5316704
+

@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{51BB2E15-BD88-429B-8BF7-54D2032EDAE3}" SchemaVersion="119">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{51BB2E15-BD88-429B-8BF7-54D2032EDAE3}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{51BB2E15-BD88-429B-8BF7-54D2032EDAE3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Sparkle" ID="{E87B0125-A74A-4586-8AC6-C8279738C5C9}" ShortID="784954373">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3FB98478-8F3D-44FC-93A8-2344177B3B0F}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EE3A0CC0-4E5D-46ED-B621-90BB42D32D02}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Sparkle" ID="{93981ACC-59DC-4176-8342-F8DCC6FAE1CA}">
+							<Language>SFX</Language>
+							<AudioFile>Sparkle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="936812434"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Sparkle" ID="{93981ACC-59DC-4176-8342-F8DCC6FAE1CA}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

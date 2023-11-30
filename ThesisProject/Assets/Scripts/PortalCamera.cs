@@ -26,7 +26,7 @@ public class PortalCamera : MonoBehaviour
         transform.position = Portal.position + playerOffsetFromPortal;
         
         // Calculate the angular difference in rotation between the two portals
-        float angularDifferenceBetweenPortalRotations = Quaternion.Angle(otherPortal.rotation, Portal.rotation);
+        float angularDifferenceBetweenPortalRotations = Quaternion.Angle(Portal.rotation, otherPortal.rotation);
 
         // Create a rotation that represents the difference in rotation between the two portals.
         Quaternion portalRotationDifference = Quaternion.AngleAxis(angularDifferenceBetweenPortalRotations, Vector3.up);
