@@ -3,12 +3,12 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{C71F0C57-57F3-45BD-94B9-CB218652F0E8}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="PortalOpen" ID="{FE9293A6-1E27-4D42-A0C3-42856C082A10}">
+				<Event Name="PortalEnter" ID="{38C07D91-83ED-4EB2-B93D-6A03B853EDFE}">
 					<ChildrenList>
-						<Action Name="" ID="{7144557F-FBB2-4326-B4FB-8C277BF7A869}" ShortID="502504793">
+						<Action Name="" ID="{DBF01484-60A3-47C2-9A10-0387EF1DDC3D}" ShortID="803724505">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="PortalOpen" ID="{43E6DAA4-46B8-400A-A0E4-D70A0754473B}" WorkUnitID="{5532C76D-BD58-415D-A7DB-835CC67A0E73}"/>
+									<ObjectRef Name="PortalOpen" ID="{91628065-B24B-4A74-92ED-3FA8C194AF4A}" WorkUnitID="{5532C76D-BD58-415D-A7DB-835CC67A0E73}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

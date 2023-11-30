@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c78ccc8ad6c5a641ba20c572fe7b2456
     GuidInternal: 
-    m_lastTime: -8585002990427545934
+    m_lastTime: -8585002925604792020
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 77639ee8db53ef419409a55eacd87d4c
     GuidInternal: 
-    m_lastTime: -8585002982172020007
+    m_lastTime: -8585002925604626633
     List:
     - name: PortalOpen
       guid: 48891616efc07d4189990f19f8bb4860
@@ -94,11 +94,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 570c1fc7f357bd4594b9cb218652f0e8
     GuidInternal: 
-    m_lastTime: -8585002982172065052
+    m_lastTime: -8585002925604566458
     List:
-    - name: PortalOpen
-      guid: a69392fe271e424da0c342856c082a10
-      id: 2461641043
+    - name: PortalEnter
+      guid: 917dc038ed83b24eb93d6a03b853edfe
+      id: 193618431
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -106,13 +106,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 570c1fc7f357bd4594b9cb218652f0e8
-      - ElementName: PortalOpen
+      - ElementName: PortalEnter
         ObjectType: 3
-        guid: a69392fe271e424da0c342856c082a10
-      Path: Events\Default Work Unit\PortalOpen
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+        guid: 917dc038ed83b24eb93d6a03b853edfe
+      Path: Events\Default Work Unit\PortalEnter
+      maxAttenuation: 10
+      maxDuration: 262.37
+      minDuration: 262.37
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -167,10 +167,24 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 093f223fbc2de247a2e10cd9f87c19fd
     GuidInternal: 
-    m_lastTime: -8585002990426884386
-    List: []
+    m_lastTime: -8585002925604691843
+    List:
+    - name: PortalEnterTrigger
+      guid: 0b11152bbc6fd34dbc103b04f894b1b9
+      id: 1920258857
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 093f223fbc2de247a2e10cd9f87c19fd
+      - ElementName: PortalEnterTrigger
+        ObjectType: 14
+        guid: 0b11152bbc6fd34dbc103b04f894b1b9
+      Path: Triggers\Default Work Unit\PortalEnterTrigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 2102000022020000
+  ExpandedWaapiItemIds: 0500000006000000070000000b0000000c0000002102000022020000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{EF40158E-B8CB-842D-CF62-69967F05BDE7}">
+		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{601BB8BE-347C-A1DD-8F4D-228F3C9402E7}">
 			<ShortName>PortalOpen</ShortName>
 			<Path>PortalOpen.bnk</Path>
 			<Media>
@@ -32,7 +32,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2461641043" Name="PortalOpen" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
+				<Event Id="2461641043" Name="PortalOpen" MaxAttenuation="100" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
 					<MediaRefs>
 						<MediaRef Id="460168151"/>
 					</MediaRefs>
@@ -40,5 +40,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F3AEE7D8-43B7-AA09-4780-59D4DEEFA28D}</FileHash>
+	<FileHash>{63C81BB0-261E-E7D3-B136-0BF404A88C3E}</FileHash>
 </SoundBanksInfo>

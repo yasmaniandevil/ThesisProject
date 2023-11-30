@@ -3,17 +3,31 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{5532C76D-BD58-415D-A7DB-835CC67A0E73}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="PortalOpen" ID="{43E6DAA4-46B8-400A-A0E4-D70A0754473B}" ShortID="694766108">
+				<Sound Name="PortalOpen" ID="{91628065-B24B-4A74-92ED-3FA8C194AF4A}" ShortID="685261497">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="PortalAttenuation" ID="{5E62E84C-D278-439B-8E6B-44956DE750BB}" WorkUnitID="{FA9FFE0E-C28E-4B8C-95D6-8DFC23573EBD}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F9AE73-9FDA-49D3-8EC0-C4657CD3EE28}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{E2C6E551-D926-464F-8EB0-EDA5B5BAB02A}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3)" ID="{B63C9192-EDCB-432C-9892-E8E7AA46AF1D}">
+						<AudioFileSource Name="DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3)" ID="{1E553483-FD83-4EF3-A940-83CB74C0E77F}">
 							<Language>SFX</Language>
 							<AudioFile>DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3).wav</AudioFile>
 							<MediaIDList>
@@ -22,7 +36,7 @@
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3)" ID="{B63C9192-EDCB-432C-9892-E8E7AA46AF1D}" Platform="Linked"/>
+						<ActiveSource Name="DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3)" ID="{1E553483-FD83-4EF3-A940-83CB74C0E77F}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

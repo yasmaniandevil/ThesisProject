@@ -13,8 +13,13 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PORTALOPEN = 2461641043U;
+        static const AkUniqueID PORTALENTER = 193618431U;
     } // namespace EVENTS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID PORTALENTERTRIGGER = 1920258857U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

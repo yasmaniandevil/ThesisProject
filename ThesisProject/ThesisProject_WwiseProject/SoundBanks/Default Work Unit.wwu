@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="PortalOpen" ID="{16168948-C0EF-417D-8999-0F19F8BB4860}">
 					<ObjectInclusionList>
-						<ObjectRef Name="PortalOpen" ID="{FE9293A6-1E27-4D42-A0C3-42856C082A10}" WorkUnitID="{C71F0C57-57F3-45BD-94B9-CB218652F0E8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PortalEnter" ID="{38C07D91-83ED-4EB2-B93D-6A03B853EDFE}" WorkUnitID="{C71F0C57-57F3-45BD-94B9-CB218652F0E8}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -22,6 +22,23 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
+		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{CE5B70F3-B173-C867-4542-07136FAAFA64}">
+			<ShortName>PortalOpen</ShortName>
+			<Path>PortalOpen.bnk</Path>
+			<Media>
+				<File Id="460168151" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3).wav</ShortName>
+					<CachePath>SFX/DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3)_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="193618431" Name="PortalEnter" MaxAttenuation="10" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
+					<MediaRefs>
+						<MediaRef Id="460168151"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{728B0CF1-C3AD-A635-6DAF-778047395964}</FileHash>
+	<FileHash>{173EB4D0-5D4A-6302-51F1-82F40C59B3E3}</FileHash>
 </SoundBanksInfo>
