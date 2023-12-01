@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3823038620	Play_SFX_AMB_Bird			\Default Work Unit\Play_SFX_AMB_Bird	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	952713752	SFX_AMB_Bird	C:\Users\Yasmine Batniji\Documents\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\SFX_AMB_Bird_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\SFX_AMB_Bird		22345056
+

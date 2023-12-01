@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2AEBDF94-4729-437C-8DA0-D3F5413359BA}" SchemaVersion="110" RootDocumentID="{5532C76D-BD58-415D-A7DB-835CC67A0E73}" ParentDocumentID="{5532C76D-BD58-415D-A7DB-835CC67A0E73}">
+	<AudioObjects>
+		<WorkUnit Name="Player" ID="{2AEBDF94-4729-437C-8DA0-D3F5413359BA}" OwnerID="{5532C76D-BD58-415D-A7DB-835CC67A0E73}" PersistMode="Nested">
+			<ChildrenList>
+				<RandomSequenceContainer Name="FootSteps" ID="{4B1970E3-BB0C-4CD4-88A9-88A2868BAF01}" ShortID="541438461">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F9AE73-9FDA-49D3-8EC0-C4657CD3EE28}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="SFX_Player_Footsteps_01" ID="{EBF7C70D-B846-4B5B-B0B0-47B72603A2ED}" ShortID="1016452755">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F9AE73-9FDA-49D3-8EC0-C4657CD3EE28}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Player_Footsteps_01" ID="{16A62AA5-9D09-42C2-BF31-6F5E8C9D48F5}">
+									<Language>SFX</Language>
+									<AudioFile>SFX_Player_Footsteps_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="406836827"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Player_Footsteps_01" ID="{16A62AA5-9D09-42C2-BF31-6F5E8C9D48F5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

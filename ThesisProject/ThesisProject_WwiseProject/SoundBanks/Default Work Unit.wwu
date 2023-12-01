@@ -17,6 +17,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="PortalB_Birds" ID="{7E29E697-9FA6-4C72-A790-F404A1A95CFA}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_SFX_AMB_Bird" ID="{0EF61B9A-60B2-44A6-9E6A-CE75FCC67B1F}" WorkUnitID="{C71F0C57-57F3-45BD-94B9-CB218652F0E8}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

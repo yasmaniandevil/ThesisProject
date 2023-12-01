@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 139ed9e7dc4ebf4e8937cf86a80e52bd
     GuidInternal: 
-    m_lastTime: -8585002990426577498
+    m_lastTime: -8585002894169740005
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c78ccc8ad6c5a641ba20c572fe7b2456
     GuidInternal: 
-    m_lastTime: -8585002866161301400
+    m_lastTime: -8585002400583076854
     List:
     - name: Ambient
       guid: e6cab146c454d545b63c0e0b74301c35
@@ -100,8 +100,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 77639ee8db53ef419409a55eacd87d4c
     GuidInternal: 
-    m_lastTime: -8585002874068148354
+    m_lastTime: -8585001441725792860
     List:
+    - name: PortalB_Birds
+      guid: 97e6297ea69f724ca790f404a1a95cfa
+      id: 4072012562
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 77639ee8db53ef419409a55eacd87d4c
+      - ElementName: PortalB_Birds
+        ObjectType: 7
+        guid: 97e6297ea69f724ca790f404a1a95cfa
+      Path: SoundBanks\Default Work Unit\PortalB_Birds
     - name: PortalExit
       guid: b37c1b673fcd2744b5ce17d89cfd1a3a
       id: 1119349543
@@ -142,8 +156,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 570c1fc7f357bd4594b9cb218652f0e8
     GuidInternal: 
-    m_lastTime: -8585002874068063248
+    m_lastTime: -8585001445986747726
     List:
+    - name: Play_SFX_AMB_Bird
+      guid: 9a1bf60eb260a6449e6ace75fcc67b1f
+      id: 3823038620
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 570c1fc7f357bd4594b9cb218652f0e8
+      - ElementName: Play_SFX_AMB_Bird
+        ObjectType: 3
+        guid: 9a1bf60eb260a6449e6ace75fcc67b1f
+      Path: Events\Default Work Unit\Play_SFX_AMB_Bird
+      maxAttenuation: 50
+      maxDuration: 116.38
+      minDuration: 116.38
     - name: PortalEnter
       guid: 917dc038ed83b24eb93d6a03b853edfe
       id: 193618431
@@ -175,7 +206,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 75c4bbf4096eff4fa0accd450e883ed5
       Path: Events\Default Work Unit\PortalExit
-      maxAttenuation: 30
+      maxAttenuation: 5
       maxDuration: 83.13
       minDuration: 83.13
   RtpcWwu:
@@ -190,7 +221,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 96aaeebc844a71468b9885daf2a31586
     GuidInternal: 
-    m_lastTime: -8585002990427079914
+    m_lastTime: -8585002894205601763
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -204,7 +235,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 99af7274e7a12e4cb375e71dfcccda3d
     GuidInternal: 
-    m_lastTime: -8585002990427296563
+    m_lastTime: -8585002894172456606
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -218,7 +249,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a438c514593db841b34dc1728f603a3d
     GuidInternal: 
-    m_lastTime: -8585002990427341777
+    m_lastTime: -8585002894172444717
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -232,7 +263,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 093f223fbc2de247a2e10cd9f87c19fd
     GuidInternal: 
-    m_lastTime: -8585002925604691843
+    m_lastTime: -8585002894169750815
     List:
     - name: PortalEnterTrigger
       guid: 0b11152bbc6fd34dbc103b04f894b1b9
@@ -249,7 +280,7 @@ MonoBehaviour:
         guid: 0b11152bbc6fd34dbc103b04f894b1b9
       Path: Triggers\Default Work Unit\PortalEnterTrigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000000c0000002102000022020000
+  ExpandedWaapiItemIds: 06000000070000000d0000000e000000790000007a000000db000000dc000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

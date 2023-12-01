@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1119349543" Type="User" Language="SFX" Hash="{9C897E62-F142-AB01-8FF3-10C0D857EAEE}">
+		<SoundBank Id="1119349543" Type="User" Language="SFX" Hash="{5EA00487-E5B0-19B8-0005-2DD857C867B2}">
 			<ShortName>PortalExit</ShortName>
 			<Path>PortalExit.bnk</Path>
 			<Media>
@@ -19,7 +19,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1119349543" Name="PortalExit" MaxAttenuation="30" DurationType="OneShot" DurationMin="83.13" DurationMax="83.13">
+				<Event Id="1119349543" Name="PortalExit" MaxAttenuation="5" DurationType="OneShot" DurationMin="83.13" DurationMax="83.13">
 					<MediaRefs>
 						<MediaRef Id="57179054"/>
 					</MediaRefs>
@@ -29,7 +29,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8CC9B565-58A6-A2C3-D007-AAECC7A786BF}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1D8BDBAE-90DD-E4A3-85D1-1AE5848B0AD0}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -42,6 +42,7 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="77978275" Name="Ambient"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<AuxBusses>
@@ -54,7 +55,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{1219A9BE-078D-0AE0-5218-EFFFECC41410}">
+		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{AA5F8195-A98C-8FA7-A878-0D0A4E7F8002}">
 			<ShortName>PortalOpen</ShortName>
 			<Path>PortalOpen.bnk</Path>
 			<Media>
@@ -74,6 +75,26 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="4072012562" Type="User" Language="SFX" Hash="{1F44214C-2B7A-8D50-AFF6-7618242E46E4}">
+			<ShortName>PortalB_Birds</ShortName>
+			<Path>PortalB_Birds.bnk</Path>
+			<Media>
+				<File Id="952713752" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_AMB_Bird.wav</ShortName>
+					<CachePath>SFX/SFX_AMB_Bird_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3823038620" Name="Play_SFX_AMB_Bird" MaxAttenuation="50" DurationType="OneShot" DurationMin="116.38" DurationMax="116.38">
+					<MediaRefs>
+						<MediaRef Id="952713752"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{BB4C455C-CAB2-7066-99E9-D8744AF8BEBC}</FileHash>
+	<FileHash>{DF3EAD15-F98D-F738-DC68-2975788EC784}</FileHash>
 </SoundBanksInfo>

@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_SFX_AMB_BIRD = 3823038620U;
         static const AkUniqueID PORTALENTER = 193618431U;
         static const AkUniqueID PORTALEXIT = 1119349543U;
     } // namespace EVENTS
@@ -25,12 +26,14 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID PORTALB_BIRDS = 4072012562U;
         static const AkUniqueID PORTALEXIT = 1119349543U;
         static const AkUniqueID PORTALOPEN = 2461641043U;
     } // namespace BANKS
 
     namespace BUSSES
     {
+        static const AkUniqueID AMBIENT = 77978275U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
 

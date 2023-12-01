@@ -8,7 +8,7 @@
 						<Action Name="" ID="{DBF01484-60A3-47C2-9A10-0387EF1DDC3D}" ShortID="803724505">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="PortalOpen" ID="{91628065-B24B-4A74-92ED-3FA8C194AF4A}" WorkUnitID="{5532C76D-BD58-415D-A7DB-835CC67A0E73}"/>
+									<ObjectRef Name="PortalOpen" ID="{91628065-B24B-4A74-92ED-3FA8C194AF4A}" WorkUnitID="{0EC3B104-E478-4138-8DE0-10302B043D72}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -19,7 +19,18 @@
 						<Action Name="" ID="{C3FDCDC9-E1AA-4E5A-8828-3C4BBD1A989F}" ShortID="595802854">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Portal Exit" ID="{215EB2C1-1A9C-4FDE-9702-8D49210C073C}" WorkUnitID="{5532C76D-BD58-415D-A7DB-835CC67A0E73}"/>
+									<ObjectRef Name="Portal Exit" ID="{215EB2C1-1A9C-4FDE-9702-8D49210C073C}" WorkUnitID="{0EC3B104-E478-4138-8DE0-10302B043D72}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_AMB_Bird" ID="{0EF61B9A-60B2-44A6-9E6A-CE75FCC67B1F}">
+					<ChildrenList>
+						<Action Name="" ID="{1EDC7D5C-BC28-4799-AB07-211EC63D9154}" ShortID="1065528453">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_AMB_Bird" ID="{26B8287E-41E6-495C-A79A-5437704A40A7}" WorkUnitID="{0EC3B104-E478-4138-8DE0-10302B043D72}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

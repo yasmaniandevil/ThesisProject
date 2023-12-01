@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	1119349543	PortalExit			\Default Work Unit\PortalExit	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	57179054	Portal Exit	C:\Users\batni\Documents\NYU\Fall 2023\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Portal Exit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Portal Exit		15961056
+	57179054	Portal Exit	C:\Users\Yasmine Batniji\Documents\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\Portal Exit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\Portal Exit		15961056
 
