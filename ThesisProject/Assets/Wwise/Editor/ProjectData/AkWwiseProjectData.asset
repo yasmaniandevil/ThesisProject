@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c78ccc8ad6c5a641ba20c572fe7b2456
     GuidInternal: 
-    m_lastTime: -8585002400583076854
+    m_lastTime: -8584999690949613927
     List:
     - name: Ambient
       guid: e6cab146c454d545b63c0e0b74301c35
@@ -189,7 +189,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 917dc038ed83b24eb93d6a03b853edfe
       Path: Events\Default Work Unit\PortalEnter
-      maxAttenuation: 10
+      maxAttenuation: 20
       maxDuration: 262.37
       minDuration: 262.37
     - name: PortalExit
@@ -206,7 +206,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 75c4bbf4096eff4fa0accd450e883ed5
       Path: Events\Default Work Unit\PortalExit
-      maxAttenuation: 5
+      maxAttenuation: 30
       maxDuration: 83.13
       minDuration: 83.13
   RtpcWwu:
@@ -280,7 +280,7 @@ MonoBehaviour:
         guid: 0b11152bbc6fd34dbc103b04f894b1b9
       Path: Triggers\Default Work Unit\PortalEnterTrigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000000c0000000e0000000f0000002102000022020000
+  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000002102000022020000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
