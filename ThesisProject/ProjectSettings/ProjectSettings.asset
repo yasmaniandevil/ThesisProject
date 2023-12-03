@@ -617,9 +617,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT
-    Standalone: WWISE_ADDRESSABLES_POST_2023;CROSS_PLATFORM_INPUT
-    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    Standalone: WWISE_ADDRESSABLES_POST_2023
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
