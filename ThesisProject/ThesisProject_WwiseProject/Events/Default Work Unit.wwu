@@ -25,12 +25,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_SFX_AMB_Bird" ID="{0EF61B9A-60B2-44A6-9E6A-CE75FCC67B1F}">
+				<Event Name="Play_Birds" ID="{1D1C253C-E2B5-4829-8EF2-BDF7F8676228}">
 					<ChildrenList>
-						<Action Name="" ID="{1EDC7D5C-BC28-4799-AB07-211EC63D9154}" ShortID="1065528453">
+						<Action Name="" ID="{9997D522-A67F-4912-A048-488CF7611DA8}" ShortID="927199739">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX_AMB_Bird" ID="{26B8287E-41E6-495C-A79A-5437704A40A7}" WorkUnitID="{0EC3B104-E478-4138-8DE0-10302B043D72}"/>
+									<ObjectRef Name="Birds" ID="{DFEC73E4-993C-4082-96A7-0D7513F36BE6}" WorkUnitID="{0EC3B104-E478-4138-8DE0-10302B043D72}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

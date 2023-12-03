@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3025897706	Play_Birds			\Default Work Unit\Play_Birds	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	565318427	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\Birds\SILENCE\Silence	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	5919902	AMB_PaliBirds_02	C:\Users\batni\Documents\NYU\Fall 2023\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\AMB_PaliBirds_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\Birds\AMB_PaliBirds_02		7893088
+	484851130	AMB_PaliBird_01	C:\Users\batni\Documents\NYU\Fall 2023\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\AMB_PaliBird_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\Birds\AMB_PaliBird_01		5763168
+	962936092	AMB_PaliBirds_03	C:\Users\batni\Documents\NYU\Fall 2023\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\AMB_PaliBirds_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\Birds\AMB_PaliBirds_03		3969120
+

@@ -29,7 +29,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{123B740C-E031-1972-E49C-6F9E754E2F9C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FA4647C6-E3CF-DD7D-FAE8-4148E02415C4}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -75,26 +75,43 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="4072012562" Type="User" Language="SFX" Hash="{1F44214C-2B7A-8D50-AFF6-7618242E46E4}">
-			<ShortName>PortalB_Birds</ShortName>
-			<Path>PortalB_Birds.bnk</Path>
+		<SoundBank Id="3636604895" Type="User" Language="SFX" Hash="{2800C9F1-169D-619E-0473-EC50293CA9E4}">
+			<ShortName>Pali_Birds_Inter</ShortName>
+			<Path>Pali_Birds_Inter.bnk</Path>
 			<Media>
-				<File Id="952713752" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_AMB_Bird.wav</ShortName>
-					<CachePath>SFX/SFX_AMB_Bird_10C4C929.wem</CachePath>
+				<File Id="5919902" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_PaliBirds_02.wav</ShortName>
+					<CachePath>SFX/AMB_PaliBirds_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="484851130" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_PaliBird_01.wav</ShortName>
+					<CachePath>SFX/AMB_PaliBird_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="962936092" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_PaliBirds_03.wav</ShortName>
+					<CachePath>SFX/AMB_PaliBirds_03_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="565318427" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
 			<Events>
-				<Event Id="3823038620" Name="Play_SFX_AMB_Bird" MaxAttenuation="50" DurationType="OneShot" DurationMin="116.38" DurationMax="116.38">
+				<Event Id="3025897706" Name="Play_Birds" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="952713752"/>
+						<MediaRef Id="5919902"/>
+						<MediaRef Id="484851130"/>
+						<MediaRef Id="962936092"/>
 					</MediaRefs>
-					<AuxBusRefs>
-						<AuxBusRef Id="348963605" Name="Reverb"/>
-					</AuxBusRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="565318427"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{387AF56B-8A79-F283-1628-FDDF7D1D4277}</FileHash>
+	<FileHash>{36048F23-010F-2EE6-2269-13D602FCD281}</FileHash>
 </SoundBanksInfo>
