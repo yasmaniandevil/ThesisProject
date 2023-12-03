@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1119349543" Type="User" Language="SFX" Hash="{5EA00487-E5B0-19B8-0005-2DD857C867B2}">
+		<SoundBank Id="1119349543" Type="User" Language="SFX" Hash="{21987BC6-2DA7-9795-9212-C2134FC28BFA}">
 			<ShortName>PortalExit</ShortName>
 			<Path>PortalExit.bnk</Path>
 			<Media>
@@ -19,7 +19,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1119349543" Name="PortalExit" MaxAttenuation="5" DurationType="OneShot" DurationMin="83.13" DurationMax="83.13">
+				<Event Id="1119349543" Name="PortalExit" MaxAttenuation="30" DurationType="OneShot" DurationMin="83.13" DurationMax="83.13">
 					<MediaRefs>
 						<MediaRef Id="57179054"/>
 					</MediaRefs>
@@ -29,7 +29,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{8894BA9A-B991-BAA0-6D69-F688B1D05057}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F1CD3309-233F-6CD1-5B0E-7881147AF1B2}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -55,7 +55,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{AA5F8195-A98C-8FA7-A878-0D0A4E7F8002}">
+		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{DF44FF0E-A166-7FB0-2A5B-BA6485F480A7}">
 			<ShortName>PortalOpen</ShortName>
 			<Path>PortalOpen.bnk</Path>
 			<Media>
@@ -65,7 +65,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="193618431" Name="PortalEnter" MaxAttenuation="10" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
+				<Event Id="193618431" Name="PortalEnter" MaxAttenuation="20" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
 					<MediaRefs>
 						<MediaRef Id="460168151"/>
 					</MediaRefs>
@@ -116,5 +116,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FFD5ABEA-26CD-11DD-4375-B971EAF553A0}</FileHash>
+	<FileHash>{D0606985-10FA-EB51-C90D-9D06581B6B0C}</FileHash>
 </SoundBanksInfo>

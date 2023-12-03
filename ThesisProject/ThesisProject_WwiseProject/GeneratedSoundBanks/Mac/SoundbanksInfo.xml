@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1119349543" Type="User" Language="SFX" Hash="{5EA00487-E5B0-19B8-0005-2DD857C867B2}">
+		<SoundBank Id="1119349543" Type="User" Language="SFX" Hash="{21987BC6-2DA7-9795-9212-C2134FC28BFA}">
 			<ShortName>PortalExit</ShortName>
 			<Path>PortalExit.bnk</Path>
 			<Media>
@@ -19,7 +19,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1119349543" Name="PortalExit" MaxAttenuation="5" DurationType="OneShot" DurationMin="83.13" DurationMax="83.13">
+				<Event Id="1119349543" Name="PortalExit" MaxAttenuation="30" DurationType="OneShot" DurationMin="83.13" DurationMax="83.13">
 					<MediaRefs>
 						<MediaRef Id="57179054"/>
 					</MediaRefs>
@@ -29,7 +29,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{FA4647C6-E3CF-DD7D-FAE8-4148E02415C4}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{66DAC30A-7878-0520-FD4E-42220C0BC7D5}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -55,7 +55,7 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{AA5F8195-A98C-8FA7-A878-0D0A4E7F8002}">
+		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{DF44FF0E-A166-7FB0-2A5B-BA6485F480A7}">
 			<ShortName>PortalOpen</ShortName>
 			<Path>PortalOpen.bnk</Path>
 			<Media>
@@ -65,7 +65,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="193618431" Name="PortalEnter" MaxAttenuation="10" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
+				<Event Id="193618431" Name="PortalEnter" MaxAttenuation="20" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
 					<MediaRefs>
 						<MediaRef Id="460168151"/>
 					</MediaRefs>
@@ -75,7 +75,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3636604895" Type="User" Language="SFX" Hash="{2800C9F1-169D-619E-0473-EC50293CA9E4}">
+		<SoundBank Id="3636604895" Type="User" Language="SFX" Hash="{6C342FC5-4A63-3C9F-C4F4-2AA6659EF12B}">
 			<ShortName>Pali_Birds_Inter</ShortName>
 			<Path>Pali_Birds_Inter.bnk</Path>
 			<Media>
@@ -109,9 +109,12 @@
 							<PluginRef Id="565318427"/>
 						</Custom>
 					</PluginRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{36048F23-010F-2EE6-2269-13D602FCD281}</FileHash>
+	<FileHash>{6F731424-D57F-D8EC-02CD-C0B643E9E51A}</FileHash>
 </SoundBanksInfo>

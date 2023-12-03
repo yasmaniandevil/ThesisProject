@@ -21,7 +21,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-18</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OutputBusHighpass" Type="int16">
