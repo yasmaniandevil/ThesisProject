@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PortalTextureSetup : MonoBehaviour
+/*public class PortalTextureSetup : MonoBehaviour
 {
 
     public Camera cameraB;
@@ -33,4 +33,4 @@ public class PortalTextureSetup : MonoBehaviour
     {
         
     }
-}
+}*/
