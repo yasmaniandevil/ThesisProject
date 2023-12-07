@@ -6,6 +6,31 @@
 				<Sound Name="Portal Exit" ID="{215EB2C1-1A9C-4FDE-9702-8D49210C073C}" ShortID="16120184">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-50</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UserAuxSendVolume1" Type="Real64">
+							<ValueList>
+								<Value>-30</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UserAuxSendVolume2" Type="Real64">
+							<ValueList>
+								<Value>-30</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-14</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -19,6 +44,12 @@
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Reverb" ID="{E2C6E551-D926-464F-8EB0-EDA5B5BAB02A}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="Low_Pass_Filter" ID="{B1EC9061-BD1D-42AC-8242-024078C7AB3E}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+						</Reference>
+						<Reference Name="UserAuxSend2">
+							<ObjectRef Name="High_Pass_Filter" ID="{CBB084FA-4F62-4588-8577-DCCEC02FBABC}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -55,6 +86,9 @@
 						</Reference>
 						<Reference Name="UserAuxSend0">
 							<ObjectRef Name="Reverb" ID="{E2C6E551-D926-464F-8EB0-EDA5B5BAB02A}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="Low_Pass_Filter" ID="{B1EC9061-BD1D-42AC-8242-024078C7AB3E}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

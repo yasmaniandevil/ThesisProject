@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c78ccc8ad6c5a641ba20c572fe7b2456
     GuidInternal: 
-    m_lastTime: -8584999690949613927
+    m_lastTime: -8584996231156918830
     List:
     - name: Ambient
       guid: e6cab146c454d545b63c0e0b74301c35
@@ -57,6 +57,40 @@ MonoBehaviour:
         ObjectType: 2
         guid: e6cab146c454d545b63c0e0b74301c35
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Ambient
+    - name: High_Pass_Filter
+      guid: fa84b0cb624f88458577dccec02fbabc
+      id: 3024472480
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c78ccc8ad6c5a641ba20c572fe7b2456
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: High_Pass_Filter
+        ObjectType: 1
+        guid: fa84b0cb624f88458577dccec02fbabc
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\High_Pass_Filter
+    - name: Low_Pass_Filter
+      guid: 6190ecb11dbdac428242024078c7ab3e
+      id: 3452161668
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: c78ccc8ad6c5a641ba20c572fe7b2456
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Low_Pass_Filter
+        ObjectType: 1
+        guid: 6190ecb11dbdac428242024078c7ab3e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Low_Pass_Filter
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -100,7 +134,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 77639ee8db53ef419409a55eacd87d4c
     GuidInternal: 
-    m_lastTime: -8584999732657500559
+    m_lastTime: -8584997993565316097
     List:
     - name: Pali_Birds_Inter
       guid: 6f3b35994b5adb409b5f20cdf299606d
@@ -156,7 +190,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 570c1fc7f357bd4594b9cb218652f0e8
     GuidInternal: 
-    m_lastTime: -8584999732657440406
+    m_lastTime: -8584997993576168135
     List:
     - name: Play_Birds
       guid: 3c251c1db5e229488ef2bdf7f8676228
@@ -280,7 +314,7 @@ MonoBehaviour:
         guid: 0b11152bbc6fd34dbc103b04f894b1b9
       Path: Triggers\Default Work Unit\PortalEnterTrigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b0000000c0000000d0000000e0000000f0000002102000022020000
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
