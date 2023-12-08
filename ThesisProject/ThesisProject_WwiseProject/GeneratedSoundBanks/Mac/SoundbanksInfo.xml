@@ -94,7 +94,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3636604895" Type="User" Language="SFX" Hash="{B9FE4E9D-23A8-C199-EF63-C55F4F0BA092}">
+		<SoundBank Id="3636604895" Type="User" Language="SFX" Hash="{88C746F3-5457-9448-FF3D-A7F053196CA6}">
 			<ShortName>Pali_Birds_Inter</ShortName>
 			<Path>Pali_Birds_Inter.bnk</Path>
 			<Media>
@@ -155,5 +155,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9D8E88A4-3B6A-6032-81A9-84ADC2F14D5E}</FileHash>
+	<FileHash>{75B279D6-4310-9FD2-574A-273FAF88FC0B}</FileHash>
 </SoundBanksInfo>

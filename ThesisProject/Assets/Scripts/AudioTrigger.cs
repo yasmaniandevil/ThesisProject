@@ -20,11 +20,12 @@ public class AudioTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         AkSoundEngine.PostEvent("PortalEnter", gameObject);
+        Debug.Log("enter");
     }
 
-    private void OnTriggerExit(Collider other)
+    /*private void OnTriggerExit(Collider other)
     {
         AkSoundEngine.PostEvent("PortalExit", gameObject);
         Debug.Log("exit");
-    }
+    }*/
 }
