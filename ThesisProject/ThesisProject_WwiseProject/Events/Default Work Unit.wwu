@@ -36,6 +36,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_AMB_Children" ID="{88BD32B3-D62E-4037-82A6-13F9D37E8264}">
+					<ChildrenList>
+						<Action Name="" ID="{F1406799-4089-457E-9152-22B6A9E5E37C}" ShortID="382517849">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Children" ID="{DE1B2D7E-02B2-46DD-A3B5-916C149CE60A}" WorkUnitID="{0EC3B104-E478-4138-8DE0-10302B043D72}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

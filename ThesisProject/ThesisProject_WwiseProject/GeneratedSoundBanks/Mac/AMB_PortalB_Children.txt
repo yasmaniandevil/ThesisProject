@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3524268276	Play_AMB_Children			\Default Work Unit\Play_AMB_Children	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	256438821	AMB_Children	C:\Users\Yasmine Batniji\Documents\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\AMBUrbn_City Places Day Ext Many Children Playing_PSE_SONCTS_kp7jQ_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\AMB_Children		26267616
+

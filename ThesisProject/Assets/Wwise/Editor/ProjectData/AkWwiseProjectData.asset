@@ -134,8 +134,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 77639ee8db53ef419409a55eacd87d4c
     GuidInternal: 
-    m_lastTime: -8584997993565316097
+    m_lastTime: -8584995468650095082
     List:
+    - name: AMB_PortalB_Children
+      guid: 8c6a97e56a63bd4b83388594c0cffffe
+      id: 3854491928
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 77639ee8db53ef419409a55eacd87d4c
+      - ElementName: AMB_PortalB_Children
+        ObjectType: 7
+        guid: 8c6a97e56a63bd4b83388594c0cffffe
+      Path: SoundBanks\Default Work Unit\AMB_PortalB_Children
     - name: Pali_Birds_Inter
       guid: 6f3b35994b5adb409b5f20cdf299606d
       id: 3636604895
@@ -190,8 +204,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 570c1fc7f357bd4594b9cb218652f0e8
     GuidInternal: 
-    m_lastTime: -8584997993576168135
+    m_lastTime: -8584995468650235103
     List:
+    - name: Play_AMB_Children
+      guid: b332bd882ed6374082a613f9d37e8264
+      id: 3524268276
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 570c1fc7f357bd4594b9cb218652f0e8
+      - ElementName: Play_AMB_Children
+        ObjectType: 3
+        guid: b332bd882ed6374082a613f9d37e8264
+      Path: Events\Default Work Unit\Play_AMB_Children
+      maxAttenuation: 35
+      maxDuration: 136.81
+      minDuration: 136.81
     - name: Play_Birds
       guid: 3c251c1db5e229488ef2bdf7f8676228
       id: 3025897706
@@ -206,7 +237,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 3c251c1db5e229488ef2bdf7f8676228
       Path: Events\Default Work Unit\Play_Birds
-      maxAttenuation: 0
+      maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
     - name: PortalEnter
@@ -223,7 +254,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 917dc038ed83b24eb93d6a03b853edfe
       Path: Events\Default Work Unit\PortalEnter
-      maxAttenuation: 20
+      maxAttenuation: 10
       maxDuration: 262.37
       minDuration: 262.37
     - name: PortalExit
@@ -241,8 +272,8 @@ MonoBehaviour:
         guid: 75c4bbf4096eff4fa0accd450e883ed5
       Path: Events\Default Work Unit\PortalExit
       maxAttenuation: 30
-      maxDuration: 83.13
-      minDuration: 83.13
+      maxDuration: 85.565895
+      minDuration: 85.565895
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -314,7 +345,7 @@ MonoBehaviour:
         guid: 0b11152bbc6fd34dbc103b04f894b1b9
       Path: Triggers\Default Work Unit\PortalEnterTrigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000d0000000e0000000201000003010000be010000bf010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

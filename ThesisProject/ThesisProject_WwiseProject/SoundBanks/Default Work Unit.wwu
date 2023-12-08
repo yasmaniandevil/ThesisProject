@@ -24,6 +24,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="AMB_PortalB_Children" ID="{E5976A8C-636A-4BBD-8338-8594C0CFFFFE}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_AMB_Children" ID="{88BD32B3-D62E-4037-82A6-13F9D37E8264}" WorkUnitID="{C71F0C57-57F3-45BD-94B9-CB218652F0E8}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

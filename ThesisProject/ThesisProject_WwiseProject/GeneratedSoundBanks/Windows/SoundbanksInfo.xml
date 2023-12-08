@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1119349543" Type="User" Language="SFX" Hash="{21987BC6-2DA7-9795-9212-C2134FC28BFA}">
+		<SoundBank Id="1119349543" Type="User" Language="SFX" Hash="{FA5C8916-D4CC-B1C4-12CE-667E5A89BF24}">
 			<ShortName>PortalExit</ShortName>
 			<Path>PortalExit.bnk</Path>
 			<Media>
@@ -19,22 +19,26 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1119349543" Name="PortalExit" MaxAttenuation="30" DurationType="OneShot" DurationMin="83.13" DurationMax="83.13">
+				<Event Id="1119349543" Name="PortalExit" MaxAttenuation="30" DurationType="OneShot" DurationMin="85.565895" DurationMax="85.565895">
 					<MediaRefs>
 						<MediaRef Id="57179054"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="348963605" Name="Reverb"/>
+						<AuxBusRef Id="3024472480" Name="High_Pass_Filter"/>
+						<AuxBusRef Id="3452161668" Name="Low_Pass_Filter"/>
 					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F1CD3309-233F-6CD1-5B0E-7881147AF1B2}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{A452433F-18C1-9F34-EA65-7E007B3BBBD4}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<ShareSets>
 					<Plugin Id="602546716" Name="Room_Large" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1008402193" Name="Low_Pass_20KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -53,9 +57,23 @@
 						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
+				<AuxBus Id="3024472480" Name="High_Pass_Filter">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3604890626"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3452161668" Name="Low_Pass_Filter">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1008402193"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{DF44FF0E-A166-7FB0-2A5B-BA6485F480A7}">
+		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{112369EB-8EB4-0BFF-BBFA-7E6F4E505C3F}">
 			<ShortName>PortalOpen</ShortName>
 			<Path>PortalOpen.bnk</Path>
 			<Media>
@@ -65,17 +83,18 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="193618431" Name="PortalEnter" MaxAttenuation="20" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
+				<Event Id="193618431" Name="PortalEnter" MaxAttenuation="10" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
 					<MediaRefs>
 						<MediaRef Id="460168151"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="348963605" Name="Reverb"/>
+						<AuxBusRef Id="3452161668" Name="Low_Pass_Filter"/>
 					</AuxBusRefs>
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3636604895" Type="User" Language="SFX" Hash="{6C342FC5-4A63-3C9F-C4F4-2AA6659EF12B}">
+		<SoundBank Id="3636604895" Type="User" Language="SFX" Hash="{B9FE4E9D-23A8-C199-EF63-C55F4F0BA092}">
 			<ShortName>Pali_Birds_Inter</ShortName>
 			<Path>Pali_Birds_Inter.bnk</Path>
 			<Media>
@@ -98,7 +117,7 @@
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="3025897706" Name="Play_Birds" DurationType="Infinite">
+				<Event Id="3025897706" Name="Play_Birds" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="5919902"/>
 						<MediaRef Id="484851130"/>
@@ -115,6 +134,26 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="3854491928" Type="User" Language="SFX" Hash="{552003B4-C937-A420-4535-1DC7A4E5B38D}">
+			<ShortName>AMB_PortalB_Children</ShortName>
+			<Path>AMB_PortalB_Children.bnk</Path>
+			<Media>
+				<File Id="256438821" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMBUrbn_City Places Day Ext Many Children Playing_PSE_SONCTS_kp7jQ.wav</ShortName>
+					<CachePath>SFX/AMBUrbn_City Places Day Ext Many Children Playing_PSE_SONCTS_kp7jQ_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3524268276" Name="Play_AMB_Children" MaxAttenuation="35" DurationType="OneShot" DurationMin="136.81" DurationMax="136.81">
+					<MediaRefs>
+						<MediaRef Id="256438821"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D0606985-10FA-EB51-C90D-9D06581B6B0C}</FileHash>
+	<FileHash>{C5B400A2-13E2-5865-5FBF-B044E3B2FDFB}</FileHash>
 </SoundBanksInfo>
