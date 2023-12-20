@@ -47,6 +47,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_AMB_AdanAndPeople" ID="{D0897BD9-5BA1-4EF5-A97C-B543CCE28B77}">
+					<ChildrenList>
+						<Action Name="" ID="{B2133735-0F57-4481-BB81-621D972AF222}" ShortID="757702165">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_AdanAndPeople" ID="{0C932603-AFF2-404F-93F9-0E7598555B99}" WorkUnitID="{0EC3B104-E478-4138-8DE0-10302B043D72}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ENV_PortalLead_01" ID="{7B25D6B0-C0F1-4849-A9CD-695BAC0B4BD3}">
+					<ChildrenList>
+						<Action Name="" ID="{AC398615-153B-4045-AD6A-1B2967BE1616}" ShortID="914501747">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ENV_PortalLead_01" ID="{B0C396F8-86EA-409E-9E7C-09E07B65DDF4}" WorkUnitID="{0EC3B104-E478-4138-8DE0-10302B043D72}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

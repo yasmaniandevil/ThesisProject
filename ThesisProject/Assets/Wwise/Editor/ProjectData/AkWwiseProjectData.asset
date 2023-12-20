@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 139ed9e7dc4ebf4e8937cf86a80e52bd
     GuidInternal: 
-    m_lastTime: -8585002894169740005
+    m_lastTime: -8585002990426577498
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: c78ccc8ad6c5a641ba20c572fe7b2456
     GuidInternal: 
-    m_lastTime: -8584996231156918830
+    m_lastTime: -8584993594002840382
     List:
     - name: Ambient
       guid: e6cab146c454d545b63c0e0b74301c35
@@ -134,8 +134,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 77639ee8db53ef419409a55eacd87d4c
     GuidInternal: 
-    m_lastTime: -8584995468650095082
+    m_lastTime: -8584985033735852423
     List:
+    - name: AMB_AdanAndPeople
+      guid: 8df3f28713ae224a9b434320d36a8a51
+      id: 780465942
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 77639ee8db53ef419409a55eacd87d4c
+      - ElementName: AMB_AdanAndPeople
+        ObjectType: 7
+        guid: 8df3f28713ae224a9b434320d36a8a51
+      Path: SoundBanks\Default Work Unit\AMB_AdanAndPeople
     - name: AMB_PortalB_Children
       guid: 8c6a97e56a63bd4b83388594c0cffffe
       id: 3854491928
@@ -150,6 +164,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 8c6a97e56a63bd4b83388594c0cffffe
       Path: SoundBanks\Default Work Unit\AMB_PortalB_Children
+    - name: ENV_PortalLead
+      guid: bcb01e58dd2ad54bb0d4347600923d5b
+      id: 534607965
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 77639ee8db53ef419409a55eacd87d4c
+      - ElementName: ENV_PortalLead
+        ObjectType: 7
+        guid: bcb01e58dd2ad54bb0d4347600923d5b
+      Path: SoundBanks\Default Work Unit\ENV_PortalLead
     - name: Pali_Birds_Inter
       guid: 6f3b35994b5adb409b5f20cdf299606d
       id: 3636604895
@@ -204,8 +232,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 570c1fc7f357bd4594b9cb218652f0e8
     GuidInternal: 
-    m_lastTime: -8584995468650235103
+    m_lastTime: -8584985033735912431
     List:
+    - name: Play_AMB_AdanAndPeople
+      guid: d97b89d0a15bf54ea97cb543cce28b77
+      id: 3184083507
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 570c1fc7f357bd4594b9cb218652f0e8
+      - ElementName: Play_AMB_AdanAndPeople
+        ObjectType: 3
+        guid: d97b89d0a15bf54ea97cb543cce28b77
+      Path: Events\Default Work Unit\Play_AMB_AdanAndPeople
+      maxAttenuation: 0
+      maxDuration: 114.97
+      minDuration: 114.97
     - name: Play_AMB_Children
       guid: b332bd882ed6374082a613f9d37e8264
       id: 3524268276
@@ -240,6 +285,23 @@ MonoBehaviour:
       maxAttenuation: 100
       maxDuration: -1
       minDuration: -1
+    - name: Play_ENV_PortalLead_01
+      guid: b0d6257bf1c04948a9cd695bac0b4bd3
+      id: 3518020456
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 570c1fc7f357bd4594b9cb218652f0e8
+      - ElementName: Play_ENV_PortalLead_01
+        ObjectType: 3
+        guid: b0d6257bf1c04948a9cd695bac0b4bd3
+      Path: Events\Default Work Unit\Play_ENV_PortalLead_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PortalEnter
       guid: 917dc038ed83b24eb93d6a03b853edfe
       id: 193618431
@@ -254,9 +316,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 917dc038ed83b24eb93d6a03b853edfe
       Path: Events\Default Work Unit\PortalEnter
-      maxAttenuation: 10
-      maxDuration: 262.37
-      minDuration: 262.37
+      maxAttenuation: 0
+      maxDuration: 8.449989
+      minDuration: 8.449989
     - name: PortalExit
       guid: 75c4bbf4096eff4fa0accd450e883ed5
       id: 1119349543
@@ -286,7 +348,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 96aaeebc844a71468b9885daf2a31586
     GuidInternal: 
-    m_lastTime: -8585002894205601763
+    m_lastTime: -8585002990427079914
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
@@ -300,7 +362,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 99af7274e7a12e4cb375e71dfcccda3d
     GuidInternal: 
-    m_lastTime: -8585002894172456606
+    m_lastTime: -8585002990427296563
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -314,7 +376,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: a438c514593db841b34dc1728f603a3d
     GuidInternal: 
-    m_lastTime: -8585002894172444717
+    m_lastTime: -8585002990427341777
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -328,7 +390,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 093f223fbc2de247a2e10cd9f87c19fd
     GuidInternal: 
-    m_lastTime: -8585002894169750815
+    m_lastTime: -8585002925604691843
     List:
     - name: PortalEnterTrigger
       guid: 0b11152bbc6fd34dbc103b04f894b1b9
@@ -345,7 +407,7 @@ MonoBehaviour:
         guid: 0b11152bbc6fd34dbc103b04f894b1b9
       Path: Triggers\Default Work Unit\PortalEnterTrigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000000d0000000e0000000201000003010000be010000bf010000
+  ExpandedWaapiItemIds: 06000000070000000e0000000f000000c3010000c4010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

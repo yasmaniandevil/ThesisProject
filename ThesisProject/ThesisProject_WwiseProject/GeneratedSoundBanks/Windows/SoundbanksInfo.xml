@@ -9,6 +9,23 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
+		<SoundBank Id="780465942" Type="User" Language="SFX" Hash="{88F4A06B-B26C-1B3D-471B-C1633DC3119E}">
+			<ShortName>AMB_AdanAndPeople</ShortName>
+			<Path>AMB_AdanAndPeople.bnk</Path>
+			<Media>
+				<File Id="742126670" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_AdanAndPeople.wav</ShortName>
+					<CachePath>SFX/AMB_AdanAndPeople_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3184083507" Name="Play_AMB_AdanAndPeople" DurationType="OneShot" DurationMin="114.97" DurationMax="114.97">
+					<MediaRefs>
+						<MediaRef Id="742126670"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="1119349543" Type="User" Language="SFX" Hash="{FA5C8916-D4CC-B1C4-12CE-667E5A89BF24}">
 			<ShortName>PortalExit</ShortName>
 			<Path>PortalExit.bnk</Path>
@@ -73,19 +90,36 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{112369EB-8EB4-0BFF-BBFA-7E6F4E505C3F}">
-			<ShortName>PortalOpen</ShortName>
-			<Path>PortalOpen.bnk</Path>
+		<SoundBank Id="1526179742" Type="User" Language="SFX" Hash="{4E590ECB-8D21-FA6E-B6EF-BB7DF13434B0}">
+			<ShortName>AMB_PortalLead</ShortName>
+			<Path>AMB_PortalLead.bnk</Path>
 			<Media>
-				<File Id="460168151" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3).wav</ShortName>
-					<CachePath>SFX/DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3)_10C4C929.wem</CachePath>
+				<File Id="737037693" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Portal Enter.wav</ShortName>
+					<CachePath>SFX/Portal Enter_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="193618431" Name="PortalEnter" MaxAttenuation="10" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
+				<Event Id="8796433" Name="Play_AMB_PortalLead" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
 					<MediaRefs>
-						<MediaRef Id="460168151"/>
+						<MediaRef Id="737037693"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{5E1ECD33-5FF8-E69D-6A02-961DB00E9E22}">
+			<ShortName>PortalOpen</ShortName>
+			<Path>PortalOpen.bnk</Path>
+			<Media>
+				<File Id="586909955" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_PortalEnter_03.wav</ShortName>
+					<CachePath>SFX/AMB_PortalEnter_03_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="193618431" Name="PortalEnter" DurationType="OneShot" DurationMin="8.449989" DurationMax="8.449989">
+					<MediaRefs>
+						<MediaRef Id="586909955"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="348963605" Name="Reverb"/>
@@ -94,7 +128,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3636604895" Type="User" Language="SFX" Hash="{88C746F3-5457-9448-FF3D-A7F053196CA6}">
+		<SoundBank Id="3636604895" Type="User" Language="SFX" Hash="{0CEC5A3E-B6F9-1C54-F12E-FFABE08F2BAB}">
 			<ShortName>Pali_Birds_Inter</ShortName>
 			<Path>Pali_Birds_Inter.bnk</Path>
 			<Media>
@@ -155,5 +189,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{122E6A10-ACEB-1963-CCD8-86E53D10CDBD}</FileHash>
+	<FileHash>{39A3E454-519B-04AC-4473-FBF0FF395129}</FileHash>
 </SoundBanksInfo>

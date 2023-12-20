@@ -6,20 +6,13 @@ using UnityEngine;
 public class AudioTrigger : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    public string audioVar;
+    
     private void OnTriggerEnter(Collider other)
     {
-        AkSoundEngine.PostEvent("PortalEnter", gameObject);
+        //AkSoundEngine.PostEvent("PortalEnter", gameObject);
+        AkSoundEngine.PostEvent(audioVar, gameObject);
         Debug.Log("enter");
     }
 

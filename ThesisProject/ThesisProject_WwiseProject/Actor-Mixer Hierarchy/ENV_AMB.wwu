@@ -68,6 +68,7 @@
 				<Sound Name="PortalOpen" ID="{91628065-B24B-4A74-92ED-3FA8C194AF4A}" ShortID="685261497">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
 								<Value>2</Value>
@@ -97,16 +98,16 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3)" ID="{1E553483-FD83-4EF3-A940-83CB74C0E77F}">
+						<AudioFileSource Name="AMB_PortalEnter_03" ID="{1E088AFF-F287-462C-B63F-8BB0299807CC}">
 							<Language>SFX</Language>
-							<AudioFile>DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3).wav</AudioFile>
+							<AudioFile>AMB_PortalEnter_03.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="460168151"/>
+								<MediaID ID="586909955"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3)" ID="{1E553483-FD83-4EF3-A940-83CB74C0E77F}" Platform="Linked"/>
+						<ActiveSource Name="AMB_PortalEnter_03" ID="{1E088AFF-F287-462C-B63F-8BB0299807CC}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="Birds" ID="{DFEC73E4-993C-4082-96A7-0D7513F36BE6}" ShortID="317681469">
@@ -117,6 +118,11 @@
 						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
 								<Value>2</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-2</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -288,6 +294,50 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="AMBUrbn_City Places Day Ext Many Children Playing_PSE_SONCTS_kp7jQ" ID="{17D66C5F-9DB6-4A96-B8E5-C27D0AC3EB99}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="AMB_AdanAndPeople" ID="{0C932603-AFF2-404F-93F9-0E7598555B99}" ShortID="446252047">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F9AE73-9FDA-49D3-8EC0-C4657CD3EE28}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="AMB_AdanAndPeople" ID="{643B1D1A-6E55-44BD-BD82-B26016BBB3CB}">
+							<Language>SFX</Language>
+							<AudioFile>AMB_AdanAndPeople.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="742126670"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="AMB_AdanAndPeople" ID="{643B1D1A-6E55-44BD-BD82-B26016BBB3CB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="ENV_PortalLead_01" ID="{B0C396F8-86EA-409E-9E7C-09E07B65DDF4}" ShortID="149164612">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F9AE73-9FDA-49D3-8EC0-C4657CD3EE28}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ENV_PortalLead_01" ID="{B737FAC9-F150-4237-AC34-6E9F507D24EF}">
+							<Language>SFX</Language>
+							<AudioFile>ENV_PortalLead_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="345357075"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ENV_PortalLead_01" ID="{B737FAC9-F150-4237-AC34-6E9F507D24EF}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

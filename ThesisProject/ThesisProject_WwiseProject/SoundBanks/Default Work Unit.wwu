@@ -31,6 +31,20 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="AMB_AdanAndPeople" ID="{87F2F38D-AE13-4A22-9B43-4320D36A8A51}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_AMB_AdanAndPeople" ID="{D0897BD9-5BA1-4EF5-A97C-B543CCE28B77}" WorkUnitID="{C71F0C57-57F3-45BD-94B9-CB218652F0E8}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="ENV_PortalLead" ID="{581EB0BC-2ADD-4BD5-B0D4-347600923D5B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_ENV_PortalLead_01" ID="{7B25D6B0-C0F1-4849-A9CD-695BAC0B4BD3}" WorkUnitID="{C71F0C57-57F3-45BD-94B9-CB218652F0E8}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

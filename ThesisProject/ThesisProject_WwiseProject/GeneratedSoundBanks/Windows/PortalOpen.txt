@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	193618431	PortalEnter			\Default Work Unit\PortalEnter	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	460168151	PortalOpen	C:\Users\Yasmine Batniji\Documents\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\DSGNDron_Chime Drone Sparkle Shimmer_PSE_GEN_KXWAr(3)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\PortalOpen		50375136
+	586909955	PortalOpen	C:\Users\batni\Documents\NYU\Fall 2023\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\AMB_PortalEnter_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\PortalOpen		1622492
 

@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3518020456	Play_ENV_PortalLead_01			\Default Work Unit\Play_ENV_PortalLead_01	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	345357075	ENV_PortalLead_01	C:\Users\batni\Documents\NYU\Fall 2023\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\ENV_PortalLead_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\ENV_PortalLead_01		50375136
+

@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3184083507	Play_AMB_AdanAndPeople			\Default Work Unit\Play_AMB_AdanAndPeople	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	742126670	AMB_AdanAndPeople	C:\Users\batni\Documents\NYU\Fall 2023\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Windows\SFX\AMB_AdanAndPeople_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\AMB_AdanAndPeople		22074336
+
