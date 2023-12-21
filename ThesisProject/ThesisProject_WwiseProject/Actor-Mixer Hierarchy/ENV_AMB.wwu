@@ -68,15 +68,24 @@
 				<Sound Name="PortalOpen" ID="{91628065-B24B-4A74-92ED-3FA8C194AF4A}" ShortID="685261497">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-						<Property Name="UserAuxSendVolume0" Type="Real64">
+						<Property Name="Pitch" Type="int32">
 							<ValueList>
-								<Value>2</Value>
+								<Value>-2</Value>
 							</ValueList>
 						</Property>
-						<Property Name="Volume" Type="Real64">
+						<Property Name="UserAuxSendVolume0" Type="Real64">
 							<ValueList>
-								<Value>10</Value>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UserAuxSendVolume1" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UserAuxSendVolume2" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -96,18 +105,21 @@
 						<Reference Name="UserAuxSend1">
 							<ObjectRef Name="Low_Pass_Filter" ID="{B1EC9061-BD1D-42AC-8242-024078C7AB3E}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
 						</Reference>
+						<Reference Name="UserAuxSend2">
+							<ObjectRef Name="High_Pass_Filter" ID="{CBB084FA-4F62-4588-8577-DCCEC02FBABC}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="AMB_PortalEnter_03" ID="{1E088AFF-F287-462C-B63F-8BB0299807CC}">
+						<AudioFileSource Name="AMB_PortalEnter_04" ID="{8945317F-A3AD-4951-A82D-EA9E768B23B1}">
 							<Language>SFX</Language>
-							<AudioFile>AMB_PortalEnter_03.wav</AudioFile>
+							<AudioFile>AMB_PortalEnter_04.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="586909955"/>
+								<MediaID ID="70137538"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="AMB_PortalEnter_03" ID="{1E088AFF-F287-462C-B63F-8BB0299807CC}" Platform="Linked"/>
+						<ActiveSource Name="AMB_PortalEnter_04" ID="{8945317F-A3AD-4951-A82D-EA9E768B23B1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="Birds" ID="{DFEC73E4-993C-4082-96A7-0D7513F36BE6}" ShortID="317681469">
@@ -319,12 +331,30 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="ENV_PortalLead_01" ID="{B0C396F8-86EA-409E-9E7C-09E07B65DDF4}" ShortID="149164612">
+					<PropertyList>
+						<Property Name="UserAuxSendVolume0" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="PortalLead" ID="{3B44F945-F8A2-4784-A202-0713DB604FF0}" WorkUnitID="{FA9FFE0E-C28E-4B8C-95D6-8DFC23573EBD}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F9AE73-9FDA-49D3-8EC0-C4657CD3EE28}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb" ID="{E2C6E551-D926-464F-8EB0-EDA5B5BAB02A}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

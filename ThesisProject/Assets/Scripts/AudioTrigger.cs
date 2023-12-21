@@ -16,6 +16,11 @@ public class AudioTrigger : MonoBehaviour
         Debug.Log("enter");
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        //AkSoundEngine.sto
+    }
+
     /*private void OnTriggerExit(Collider other)
     {
         AkSoundEngine.PostEvent("PortalExit", gameObject);

@@ -299,9 +299,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: b0d6257bf1c04948a9cd695bac0b4bd3
       Path: Events\Default Work Unit\Play_ENV_PortalLead_01
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 30
+      maxDuration: 262.37
+      minDuration: 262.37
     - name: PortalEnter
       guid: 917dc038ed83b24eb93d6a03b853edfe
       id: 193618431
@@ -316,9 +316,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 917dc038ed83b24eb93d6a03b853edfe
       Path: Events\Default Work Unit\PortalEnter
-      maxAttenuation: 0
-      maxDuration: 8.449989
-      minDuration: 8.449989
+      maxAttenuation: 10
+      maxDuration: 23.206848
+      minDuration: 23.206848
     - name: PortalExit
       guid: 75c4bbf4096eff4fa0accd450e883ed5
       id: 1119349543
@@ -407,7 +407,7 @@ MonoBehaviour:
         guid: 0b11152bbc6fd34dbc103b04f894b1b9
       Path: Triggers\Default Work Unit\PortalEnterTrigger
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000000e0000000f000000c3010000c4010000
+  ExpandedWaapiItemIds: 06000000070000000e0000000f0000001000000011000000c3010000c4010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

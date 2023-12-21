@@ -9,6 +9,26 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
+		<SoundBank Id="534607965" Type="User" Language="SFX" Hash="{EA5B3238-609B-477C-1B4C-1BAE318DFE78}">
+			<ShortName>ENV_PortalLead</ShortName>
+			<Path>ENV_PortalLead.bnk</Path>
+			<Media>
+				<File Id="345357075" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ENV_PortalLead_01.wav</ShortName>
+					<CachePath>SFX/ENV_PortalLead_01_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3518020456" Name="Play_ENV_PortalLead_01" MaxAttenuation="30" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
+					<MediaRefs>
+						<MediaRef Id="345357075"/>
+					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="348963605" Name="Reverb"/>
+					</AuxBusRefs>
+				</Event>
+			</Events>
+		</SoundBank>
 		<SoundBank Id="780465942" Type="User" Language="SFX" Hash="{88F4A06B-B26C-1B3D-471B-C1633DC3119E}">
 			<ShortName>AMB_AdanAndPeople</ShortName>
 			<Path>AMB_AdanAndPeople.bnk</Path>
@@ -90,36 +110,19 @@
 				</AuxBus>
 			</AuxBusses>
 		</SoundBank>
-		<SoundBank Id="1526179742" Type="User" Language="SFX" Hash="{4E590ECB-8D21-FA6E-B6EF-BB7DF13434B0}">
-			<ShortName>AMB_PortalLead</ShortName>
-			<Path>AMB_PortalLead.bnk</Path>
-			<Media>
-				<File Id="737037693" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Portal Enter.wav</ShortName>
-					<CachePath>SFX/Portal Enter_10C4C929.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="8796433" Name="Play_AMB_PortalLead" DurationType="OneShot" DurationMin="262.37" DurationMax="262.37">
-					<MediaRefs>
-						<MediaRef Id="737037693"/>
-					</MediaRefs>
-				</Event>
-			</Events>
-		</SoundBank>
-		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{5E1ECD33-5FF8-E69D-6A02-961DB00E9E22}">
+		<SoundBank Id="2461641043" Type="User" Language="SFX" Hash="{56E9B32A-6596-7E81-AB2D-EB0BD6B1C2AA}">
 			<ShortName>PortalOpen</ShortName>
 			<Path>PortalOpen.bnk</Path>
 			<Media>
-				<File Id="586909955" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_PortalEnter_03.wav</ShortName>
-					<CachePath>SFX/AMB_PortalEnter_03_10C4C929.wem</CachePath>
+				<File Id="70137538" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_PortalEnter_04.wav</ShortName>
+					<CachePath>SFX/AMB_PortalEnter_04_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="193618431" Name="PortalEnter" DurationType="OneShot" DurationMin="8.449989" DurationMax="8.449989">
+				<Event Id="193618431" Name="PortalEnter" DurationType="OneShot" DurationMin="23.206848" DurationMax="23.206848">
 					<MediaRefs>
-						<MediaRef Id="586909955"/>
+						<MediaRef Id="70137538"/>
 					</MediaRefs>
 					<AuxBusRefs>
 						<AuxBusRef Id="348963605" Name="Reverb"/>
@@ -189,5 +192,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{39A3E454-519B-04AC-4473-FBF0FF395129}</FileHash>
+	<FileHash>{FD8A6C57-58D8-9D6D-4D86-C6D4717E93C2}</FileHash>
 </SoundBanksInfo>

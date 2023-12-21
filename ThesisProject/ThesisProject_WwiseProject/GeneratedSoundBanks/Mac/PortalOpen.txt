@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	193618431	PortalEnter			\Default Work Unit\PortalEnter	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	586909955	PortalOpen	C:\Users\batni\Documents\NYU\Fall 2023\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\AMB_PortalEnter_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\PortalOpen		1622492
+	70137538	PortalOpen	C:\Users\batni\Documents\NYU\Fall 2023\Thesis\Thesis Project Git\ThesisProject\ThesisProject\ThesisProject_WwiseProject\.cache\Mac\SFX\AMB_PortalEnter_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\ENV_AMB\PortalOpen		4094136
 
