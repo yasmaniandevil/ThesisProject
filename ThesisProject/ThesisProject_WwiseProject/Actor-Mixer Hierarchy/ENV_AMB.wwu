@@ -96,6 +96,9 @@
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{48F9AE73-9FDA-49D3-8EC0-C4657CD3EE28}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+							<ObjectRef Name="New_Time_Stretch" ID="{34FDE616-B13D-48EB-B3A5-49F30CCA2885}" WorkUnitID="{AAA1049A-FDB5-4062-A012-6A58274E3318}"/>
+						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ambient" ID="{46B1CAE6-54C4-45D5-B63C-0E0B74301C35}" WorkUnitID="{8ACC8CC7-C5D6-41A6-BA20-C572FE7B2456}"/>
 						</Reference>

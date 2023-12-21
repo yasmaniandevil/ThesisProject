@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{AAA1049A-FDB5-4062-A012-6A58274E3318}" SchemaVersion="110">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{AAA1049A-FDB5-4062-A012-6A58274E3318}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{AAA1049A-FDB5-4062-A012-6A58274E3318}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Time_Stretch" ID="{34FDE616-B13D-48EB-B3A5-49F30CCA2885}" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
